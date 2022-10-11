@@ -1,0 +1,86 @@
+<!-- AWP_In_Variable Name='"MasterSettings".algorithm' -->
+
+<!-- AWP_In_Variable Name='"MasterSettings".options' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[1]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[2]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[3]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[4]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[5]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[6]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[7]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[8]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[9]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".options[10]' -->
+
+<!-- AWP_In_Variable Name='"MasterSettings".input_length' -->
+
+<!-- AWP_In_Variable Name='"MasterSettings".status' -->
+
+<!-- AWP_In_Variable Name='"MasterSettings".input_data' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[1]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[2]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[3]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[4]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[5]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[6]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[7]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[8]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[9]' -->
+<!-- AWP_In_Variable Name='"MasterSettings".input_data[10]' -->
+
+<h1>Enlist as device</h1>
+
+<form method="post" action="">
+    <table>
+        <thead>
+            <tr>
+                <th>Variable Name</th>
+                <th>Current Value</th>
+                <th>New Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>algorithm</td>
+                <td>:="MasterSettings".algorithm:</td>
+                <td>
+                    <input type="text" name='"MasterSettings".algorithm'/>
+                </td>
+            </tr>
+            <!-- AWP_Start_Array Name='"MasterSettings".options' -->
+            <tr>
+                <td>options #:=ArrayIndex:</td>
+                <td>:=value:</td>
+                <td>
+                    <input type="text" name='"MasterSettings".options[:=ArrayIndex:]'/>
+                </td>
+            </tr>
+            <!-- AWP_End_Array -->
+            <!-- AWP_Start_Array Name='"MasterSettings".input_data' -->
+                <tr>
+                    <td>input_data #:=ArrayIndex:</td>
+                    <td>:=value:</td>
+                    <td>
+                        <input type="text" name='"MasterSettings".input_data[:=ArrayIndex:]'/>
+                    </td>
+                </tr>
+            <!-- AWP_End_Array -->
+            <tr>
+                <td>input_length</td>
+                <td>:="MasterSettings".input_length:</td>
+                <td>
+                    <input type="text" name='"MasterSettings".input_length'/>
+                </td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>:="MasterSettings".status:</td>
+                <td>
+                    <input type="number" name='"MasterSettings".status'/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" value="Write">
+</form>
